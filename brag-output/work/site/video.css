@@ -1,0 +1,334 @@
+/* ============================================================
+   HostelDock launch video — stage layout (1920x1080)
+   Uses the site's real stylesheets; this file only places
+   scenes on the stage and styles what the theme doesn't cover.
+   ============================================================ */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #F3F0EE;
+  overflow: hidden;
+  cursor: none;
+}
+
+#stage {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background-color: #F3F0EE;
+  font-family: "Sofia Sans", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+#stage * { cursor: none !important; }
+
+.scene {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
+  transform-origin: 50% 50%;
+}
+
+/* ============================================================
+   Scene 1 — hook
+   ============================================================ */
+.s1-left {
+  position: absolute;
+  left: 190px;
+  top: 400px;
+  width: 800px;
+}
+.s1-left .eyebrow { font-size: 15px; }
+.s1-logo { margin-top: 30px; }
+.s1-logo img { width: 430px; height: auto; display: block; }
+.s1-sub {
+  margin-top: 30px;
+  font-size: 31px;
+  line-height: 1.35;
+  font-weight: 450;
+  color: #555555;
+  max-width: 560px;
+  letter-spacing: -0.01em;
+}
+
+.s1-stage {
+  position: absolute;
+  right: 150px;
+  top: 240px;
+  width: 640px;
+  padding-block: 0;
+}
+.s1-stage .mc-watermark { font-size: 150px; }
+.s1-stage .mc-orbit { width: 430px; }
+
+.s1-sat {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  opacity: 0;
+}
+.s1-sat i { font-size: 20px; }
+#s1sat1 { right: -14px; bottom: 46px; }
+#s1sat2 { left: -18px; top: 74px; }
+
+/* ============================================================
+   Scene 2 — the search
+   ============================================================ */
+.s2-head {
+  position: absolute;
+  left: 190px;
+  top: 168px;
+  width: 980px;
+  margin: 0;
+  font-size: 56px;
+  line-height: 1.06;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: #141413;
+}
+
+.s2-form {
+  position: absolute;
+  left: 380px;
+  top: 372px;
+  width: 1160px;
+  margin: 0;
+  padding: 26px 34px 30px;
+  background-color: #FCFBFA;
+  border: 1px solid rgba(20, 20, 19, 0.10);
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 12px 28px;
+}
+.s2-form .form-label { font-size: 14px; margin-bottom: 4px; color: #696969; }
+.s2-form .form-control, .s2-form .form-select {
+  min-height: 44px;
+  background-color: transparent;
+  border: 0;
+  padding-left: 0;
+  font-size: 17px;
+  color: #141413;
+}
+.s2-form hr { opacity: 0.5; }
+.s2-form .bg-mode { background-color: transparent; }
+
+.s2-cards {
+  position: absolute;
+  left: 390px;
+  top: 372px;
+  width: 1140px;
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+.s2-card { flex: 1 1 0; opacity: 0; }
+.s2-card .card { border: 1px solid rgba(20, 20, 19, 0.07); }
+.s2-photo { height: 196px; }
+.s2-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.s2-card .card-title { font-size: 21px; letter-spacing: -0.02em; }
+.s2-card .nav-item { font-size: 15px; color: #262627; }
+
+/* ============================================================
+   Scene 3 — the token
+   ============================================================ */
+.s3-copy {
+  position: absolute;
+  left: 190px;
+  top: 372px;
+  width: 780px;
+}
+.s3-line {
+  display: block;
+  font-size: 96px;
+  line-height: 1.0;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  color: #141413;
+  opacity: 0;
+}
+.s3-note {
+  margin-top: 28px;
+  max-width: 520px;
+  font-size: 25px;
+  line-height: 1.45;
+  font-weight: 450;
+  color: #555555;
+  opacity: 0;
+}
+
+.s3-cards {
+  position: absolute;
+  left: 1080px;
+  top: 262px;
+  width: 620px;
+  height: 520px;
+}
+.s3-card {
+  position: absolute;
+  inset: 0;
+  height: auto;
+  border: 1px solid rgba(20, 20, 19, 0.07);
+  background-color: #FCFBFA;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 24px 48px;
+}
+.s3-card h4 { font-size: 27px; }
+.s3-card p { font-size: 18px; line-height: 1.5; }
+.s3-icon { width: 88px; height: 88px; }
+.s3-icon i { font-size: 2.4rem; }
+
+/* ============================================================
+   Scene 4 — book & pay
+   ============================================================ */
+.s4-head {
+  position: absolute;
+  left: 190px;
+  top: 168px;
+  width: 1040px;
+  margin: 0;
+  font-size: 52px;
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: #141413;
+  opacity: 0;
+}
+
+.s4-book {
+  position: absolute;
+  left: 190px;
+  top: 358px;
+  width: 790px;
+  border: 1px solid rgba(20, 20, 19, 0.07);
+  background-color: #FCFBFA;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 24px 48px;
+}
+.s4-book h4 { font-size: 24px; }
+.s4-book h5 { font-size: 20px; }
+.s4-book .form-select { background-color: #FFFFFF; }
+.booking-room-option {
+  background-color: #FFFFFF;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.booking-room-option.is-on {
+  border-color: #141413 !important;
+  box-shadow: rgba(243, 115, 56, 0.35) 0 0 0 3px;
+}
+
+.s4-summary, .s4-pay {
+  position: absolute;
+  left: 1040px;
+  top: 358px;
+  width: 670px;
+  border: 1px solid rgba(20, 20, 19, 0.07);
+  background-color: #FCFBFA;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 24px 48px;
+  opacity: 0;
+}
+.s4-payrow {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-top: 1px solid rgba(20, 20, 19, 0.08);
+}
+.s4-payrow .badge { font-size: 13px; font-weight: 600; padding: 7px 14px; white-space: nowrap; }
+.s4-toast {
+  margin-top: 16px;
+  padding: 14px 18px;
+  border-radius: 16px;
+  background-color: #FDF0E7;
+  border: 1px solid #F8DCC5;
+  color: #9A3A0A;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0;
+}
+
+/* ============================================================
+   Scene 5 — punchline / outro
+   ============================================================ */
+.s5-conf {
+  position: absolute;
+  left: 660px;
+  top: 322px;
+  width: 600px;
+  border: 1px solid rgba(20, 20, 19, 0.07);
+  background-color: #FCFBFA;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 24px 48px;
+  opacity: 0;
+}
+.s5-conf h3 { font-size: 34px; letter-spacing: -0.02em; }
+.s5-icon { width: 88px; height: 88px; }
+.s5-icon i { font-size: 2.4rem; }
+
+.s5-lock {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.s5-logo { opacity: 0; }
+.s5-logo img { width: 420px; height: auto; display: block; }
+.s5-head {
+  margin: 34px 0 0;
+  font-size: 60px;
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: #141413;
+  opacity: 0;
+}
+.s5-cta {
+  margin-top: 44px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  opacity: 0;
+}
+.s5-cta .btn { font-size: 18px; padding: 14px 34px; min-height: 54px; }
+.s5-url {
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #696969;
+}
+
+/* ============================================================
+   Simulated pointer
+   ============================================================ */
+.cursor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #141413;
+  color: #F3F0EE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 20px;
+  opacity: 0;
+  z-index: 2000;
+  pointer-events: none;
+}
+.cursor i { font-size: 18px; }
+
+/* orbit arcs animate via --arc */
+.s1-stage .mc-orbit { --arc: 0deg; }
+.s1-stage .mc-orbit::before {
+  transform: translate(-50%, -50%) rotate(calc(-14deg + var(--arc)));
+}
+.s1-stage .mc-orbit::after {
+  transform: translate(-50%, -50%) rotate(calc(10deg - var(--arc)));
+}

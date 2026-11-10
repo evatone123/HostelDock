@@ -1,0 +1,86 @@
+<?php $__env->startSection('title', 'Add Room'); ?>
+<?php $__env->startSection('heading', 'Add Room'); ?>
+<?php $__env->startSection('subheading', $hostel->displayName()); ?>
+
+<?php $__env->startSection('content'); ?>
+    <div class="card shadow rounded-3 p-4 col-lg-8">
+        <form method="POST" action="<?php echo e(route('manager.hostels.rooms.store', $hostel)); ?>">
+            <?php echo csrf_field(); ?>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label">Room Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="name" value="<?php echo e(old('name')); ?>" placeholder="e.g. Room 1" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Room Type <span class="text-danger">*</span></label>
+                    <select class="form-select" name="room_type">
+                        <?php $__currentLoopData = $roomTypes; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $label): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <option value="<?php echo e($key); ?>" <?php if (old('room_type') === $key) { echo 'selected'; } ?>><?php echo e($label); ?></option>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Gender Category <span class="text-danger">*</span></label>
+                    <select class="form-select" name="gender_category">
+                        <?php $__currentLoopData = $genders; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $label): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <option value="<?php echo e($key); ?>" <?php if (old('gender_category') === $key) { echo 'selected'; } ?>><?php echo e($label); ?></option>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Price Per Academic Year (GHS) <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" name="price" value="<?php echo e(old('price')); ?>" min="0" step="0.01" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Total Rooms <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" name="total_rooms" value="<?php echo e(old('total_rooms', 1)); ?>" min="1" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label d-block">Beds</label>
+                    <div class="form-control-plaintext">
+                        <strong><?php echo e(old('total_rooms', 1)); ?> rooms &times; people per room</strong>
+                    </div>
+                    <small class="text-muted">Availability is calculated from bookings, so there is nothing to set here.</small>
+                </div>
+                <div class="col-12">
+                    <label class="form-label d-block">Room Amenities <small class="text-muted">(optional)</small></label>
+                    <?php if($amenities->isEmpty()): ?>
+                        <div class="alert alert-warning py-2 mb-0">No amenities available yet. An admin needs to add some before they can be applied to rooms.</div>
+                    <?php else: ?>
+                        <div class="border rounded-2 p-3" style="max-height: 220px; overflow-y: auto;">
+                            <div class="row g-2">
+                                <?php $__currentLoopData = $amenities; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $amenity): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <div class="col-md-4">
+                                        <div class="form-check py-1 m-0">
+                                            <input class="form-check-input" type="checkbox" name="amenities[]" value="<?php echo e($amenity->id); ?>"
+                                                id="amenity_<?php echo e($amenity->id); ?>"
+                                                <?php if (in_array($amenity->id, old('amenities', $selected ?? []))) { echo 'checked'; } ?>>
+                                            <label class="form-check-label" for="amenity_<?php echo e($amenity->id); ?>">
+                                                <?php if($amenity->icon): ?>
+                                                    <i class="bi <?php echo e($amenity->icon); ?> me-1 text-primary"></i>
+                                                <?php endif; ?>
+                                                <?php echo e($amenity->name); ?>
+
+                                            </label>
+                                        </div>
+                                    </div>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                </div>
+                <div class="col-12">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" name="is_active" value="1" id="is_active" <?php if (old('is_active', true)) { echo 'checked'; } ?>>
+                        <label class="form-check-label" for="is_active">Active &amp; bookable by students</label>
+                    </div>
+                </div>
+                <div class="col-12 d-flex gap-2">
+                    <button type="submit" class="btn btn-primary mb-0"><i class="bi bi-check-lg me-1"></i>Add Room</button>
+                    <a href="<?php echo e(route('manager.hostels.rooms.index', $hostel)); ?>" class="btn btn-light mb-0">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('admin.layouts.admin', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\wamp64\www\studentroombookings\resources\views/manager/rooms/create.blade.php ENDPATH**/ ?>

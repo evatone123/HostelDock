@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin
+Disallow: /manager
+Disallow: /my-account
+Disallow: /booking
+Disallow: /tokens
+Disallow: /forgot-password
+Disallow: /reset-password
+
+Sitemap: https://www.hosteldock.com/sitemap.xml

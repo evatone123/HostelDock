@@ -1,0 +1,1159 @@
+﻿opencode.cmd : [0m
+At line:1 char:1
++ & "C:\Users\EVE\AppData\Roaming\npm\opencode.cmd" run "/brag show thi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([0m:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+> build ┬╖ big-pickle
+[0m
+[0mΓåÆ [0mSkill "brag"
+[0mΓåÆ [0mRead C:/Users/EVE/.agents/skills/brag/references/step-1-inspect.md
+[0m
+[0m$ [0mGet-Date -Format "yyyy-MM-dd-HHmmss"
+2026-10-06-182400
+[0m
+[0m$ [0mGet-ChildItem -Force | Select-Object Name, Length, Mode
+Name                                 Length   Mode  
+----                                 ------   ----  
+app                                           d-----
+bootstrap                                     d-----
+config                                        d-----
+database                                      d-----
+public                                        d-----
+resources                                     d-----
+routes                                        d-----
+storage                                       d-----
+tests                                         d-----
+vendor                                        d-----
+.editorconfig                        220      -a----
+.env                                 1803     -a----
+.env.example                         1818     -a----
+.gitattributes                       111      -a----
+.gitignore                           163      -a----
+.phpunit.result.cache                32076    -a----
+.styleci.yml                         174      -a----
+artisan                              1686     -a----
+brag-output.txt                      0        -a----
+composer.json                        1739     -a----
+composer.lock                        302372   -a----
+DESIGN.md                            26995    -a----
+HostelDock-deployment-2026-09-28.zip 43201917 -a----
+HostelDock-deployment.zip            42636426 -a----
+package.json                         974      -a----
+phpunit.xml                          1184     -a----
+README.md                            3738     -a----
+server.php                           563      -a----
+webpack.mix.js                       559      -a----
+[0m
+[0mΓ£▒ [0mGlob "**/*.{html,css,md,json,php,js}"[90m 100 matches[0m
+[0mΓåÆ [0mRead README.md
+[0m
+[0m$ [0mGet-ChildItem -Path resources -Recurse -File | Select-Object -ExpandProperty FullName; "---PUBLIC---"; 
+Get-ChildItem -Path public -Recurse -File | Select-Object -First 60 -ExpandProperty FullName
+C:\wamp64\www\studentroombookings\resources\css\app.css
+C:\wamp64\www\studentroombookings\resources\js\app.js
+C:\wamp64\www\studentroombookings\resources\js\bootstrap.js
+C:\wamp64\www\studentroombookings\resources\lang\en\auth.php
+C:\wamp64\www\studentroombookings\resources\lang\en\pagination.php
+C:\wamp64\www\studentroombookings\resources\lang\en\passwords.php
+C:\wamp64\www\studentroombookings\resources\lang\en\validation.php
+C:\wamp64\www\studentroombookings\resources\views\sitemap.blade.php
+C:\wamp64\www\studentroombookings\resources\views\welcome.blade.php
+C:\wamp64\www\studentroombookings\resources\views\account\my-bookings.blade.php
+C:\wamp64\www\studentroombookings\resources\views\account\profile.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\dashboard.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\amenities\create.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\amenities\edit.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\amenities\index.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\amenities\partials\_form.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\bookings\index.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\campuses\create.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\campuses\edit.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\campuses\index.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\campuses\partials\_form.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\hostels\create.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\hostels\edit.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\hostels\index.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\hostels\payment-details.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\hostels\partials\_form.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\hostels\partials\_payment-details.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\layouts\admin.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\messages\index.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\room-categories\create.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\room-categories\edit.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\room-categories\index.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\room-categories\partials\_form.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\rooms\create.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\rooms\edit.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\rooms\index.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\tokens\index.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\users\create.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\users\edit.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\users\index.blade.php
+C:\wamp64\www\studentroombookings\resources\views\admin\users\partials\_form.blade.php
+C:\wamp64\www\studentroombookings\resources\views\auth\login.blade.php
+C:\wamp64\www\studentroombookings\resources\views\auth\register.blade.php
+C:\wamp64\www\studentroombookings\resources\views\auth\passwords\email.blade.php
+C:\wamp64\www\studentroombookings\resources\views\auth\passwords\reset.blade.php
+C:\wamp64\www\studentroombookings\resources\views\emails\renewal-reminder.blade.php
+C:\wamp64\www\studentroombookings\resources\views\layouts\app.blade.php
+C:\wamp64\www\studentroombookings\resources\views\livewire\home-component.blade.php
+C:\wamp64\www\studentroombookings\resources\views\manager\dashboard.blade.php
+C:\wamp64\www\studentroombookings\resources\views\manager\bookings\index.blade.php
+C:\wamp64\www\studentroombookings\resources\views\manager\hostels\edit.blade.php
+C:\wamp64\www\studentroombookings\resources\views\manager\hostels\index.blade.php
+C:\wamp64\www\studentroombookings\resources\views\manager\hostels\payment-details.blade.php
+C:\wamp64\www\studentroombookings\resources\views\manager\hostels\partials\_form.blade.php
+C:\wamp64\www\studentroombookings\resources\views\manager\rooms\create.blade.php
+C:\wamp64\www\studentroombookings\resources\views\manager\rooms\edit.blade.php
+C:\wamp64\www\studentroombookings\resources\views\manager\rooms\index.blade.php
+C:\wamp64\www\studentroombookings\resources\views\pages\about.blade.php
+C:\wamp64\www\studentroombookings\resources\views\pages\booking-confirmation.blade.php
+C:\wamp64\www\studentroombookings\resources\views\pages\booking-invoice.blade.php
+C:\wamp64\www\studentroombookings\resources\views\pages\booking.blade.php
+C:\wamp64\www\studentroombookings\resources\views\pages\contact.blade.php
+C:\wamp64\www\studentroombookings\resources\views\pages\faq.blade.php
+C:\wamp64\www\studentroombookings\resources\views\pages\home.blade.php
+C:\wamp64\www\studentroombookings\resources\views\pages\hostel-detail.blade.php
+C:\wamp64\www\studentroombookings\resources\views\pages\privacy.blade.php
+C:\wamp64\www\studentroombookings\resources\views\pages\residency.blade.php
+C:\wamp64\www\studentroombookings\resources\views\pages\terms.blade.php
+C:\wamp64\www\studentroombookings\resources\views\pages\token-buy.blade.php
+C:\wamp64\www\studentroombookings\resources\views\pages\token-success.blade.php
+C:\wamp64\www\studentroombookings\resources\views\partials\footer.blade.php
+C:\wamp64\www\studentroombookings\resources\views\partials\header.blade.php
+C:\wamp64\www\studentroombookings\resources\views\partials\recaptcha.blade.php
+---PUBLIC---
+C:\wamp64\www\studentroombookings\public\.htaccess
+C:\wamp64\www\studentroombookings\public\favicon.ico
+C:\wamp64\www\studentroombookings\public\index.php
+C:\wamp64\www\studentroombookings\public\robots.txt
+C:\wamp64\www\studentroombookings\public\web.config
+C:\wamp64\www\studentroombookings\public\assets\css\docuforge-design.css
+C:\wamp64\www\studentroombookings\public\assets\css\mastercard-design.css
+C:\wamp64\www\studentroombookings\public\assets\css\style.css
+C:\wamp64\www\studentroombookings\public\assets\images\favicon.ico
+C:\wamp64\www\studentroombookings\public\assets\images\favicon.png
+C:\wamp64\www\studentroombookings\public\assets\images\logo.png
+C:\wamp64\www\studentroombookings\public\assets\images\logo2.png
+C:\wamp64\www\studentroombookings\public\assets\images\about\slider-imgs.jpg
+C:\wamp64\www\studentroombookings\public\assets\images\about\slider-imgs2.jpg
+C:\wamp64\www\studentroombookings\public\assets\images\avatar\13.png
+C:\wamp64\www\studentroombookings\public\assets\js\clear-modal-overlay.js
+C:\wamp64\www\studentroombookings\public\assets\js\functions.js
+C:\wamp64\www\studentroombookings\public\assets\js\livewire-choice-select.js
+C:\wamp64\www\studentroombookings\public\assets\js\theme.js
+C:\wamp64\www\studentroombookings\public\assets\vendor\apexcharts\css\apexcharts.css
+C:\wamp64\www\studentroombookings\public\assets\vendor\apexcharts\js\apexcharts.min.js
+C:\wamp64\www\studentroombookings\public\assets\vendor\bootstrap\dist\js\bootstrap.bundle.min.js
+C:\wamp64\www\studentroombookings\public\assets\vendor\bootstrap-icons\bootstrap-icons.css
+C:\wamp64\www\studentroombookings\public\assets\vendor\bootstrap-icons\fonts\bootstrap-iconsbf04.woff
+C:\wamp64\www\studentroombookings\public\assets\vendor\bootstrap-icons\fonts\bootstrap-iconsbf04.woff2
+C:\wamp64\www\studentroombookings\public\assets\vendor\choices\css\choices.min.css
+C:\wamp64\www\studentroombookings\public\assets\vendor\choices\js\choices.min.js
+C:\wamp64\www\studentroombookings\public\assets\vendor\flatpickr\css\flatpickr.min.css
+C:\wamp64\www\studentroombookings\public\assets\vendor\flatpickr\js\flatpickr.min.js
+C:\wamp64\www\studentroombookings\public\assets\vendor\font-awesome\css\all.min.css
+C:\wamp64\www\studentroombookings\public\assets\vendor\font-awesome\webfonts\fa-brands-400.ttf
+C:\wamp64\www\studentroombookings\public\assets\vendor\font-awesome\webfonts\fa-brands-400.woff2
+C:\wamp64\www\studentroombookings\public\assets\vendor\font-awesome\webfonts\fa-regular-400.ttf
+C:\wamp64\www\studentroombookings\public\assets\vendor\font-awesome\webfonts\fa-regular-400.woff2
+C:\wamp64\www\studentroombookings\public\assets\vendor\font-awesome\webfonts\fa-solid-900.ttf
+C:\wamp64\www\studentroombookings\public\assets\vendor\font-awesome\webfonts\fa-solid-900.woff2
+C:\wamp64\www\studentroombookings\public\assets\vendor\font-awesome\webfonts\fa-v4compatibility.ttf
+C:\wamp64\www\studentroombookings\public\assets\vendor\font-awesome\webfonts\fa-v4compatibility.woff2
+C:\wamp64\www\studentroombookings\public\assets\vendor\glightbox\css\glightbox.css
+C:\wamp64\www\studentroombookings\public\assets\vendor\glightbox\js\glightbox.js
+C:\wamp64\www\studentroombookings\public\assets\vendor\jarallax\jarallax-video.min.js
+C:\wamp64\www\studentroombookings\public\assets\vendor\jarallax\jarallax.min.js
+C:\wamp64\www\studentroombookings\public\assets\vendor\jquery\jquery-3.7.1.min.js
+C:\wamp64\www\studentroombookings\public\assets\vendor\nouislider\nouislider.css
+C:\wamp64\www\studentroombookings\public\assets\vendor\nouislider\nouislider.min.js
+C:\wamp64\www\studentroombookings\public\assets\vendor\purecounterjs\dist\purecounter_vanilla.js
+C:\wamp64\www\studentroombookings\public\assets\vendor\sticky-js\sticky.min.js
+C:\wamp64\www\studentroombookings\public\assets\vendor\tiny-slider\tiny-slider.css
+C:\wamp64\www\studentroombookings\public\assets\vendor\tiny-slider\tiny-slider.js
+C:\wamp64\www\studentroombookings\public\storage\.gitignore
+C:\wamp64\www\studentroombookings\public\storage\thumbnails\0eNxmVF0jDIgnf1dAVulIQGqXzdQIHYKtQ2Rflws.jpg
+C:\wamp64\www\studentroombookings\public\storage\thumbnails\0lCWGpKyakn3mmDFxeWJXHxSOK6ycCi2hd2zoA0T.jpg
+C:\wamp64\www\studentroombookings\public\storage\thumbnails\0VEPdIgYAFHnp5w7a7L462KqunO9AgelpuKDNvqZ.jpg
+C:\wamp64\www\studentroombookings\public\storage\thumbnails\0vVb4Vgk6kG9tb1VNGJ913VlBptgkMXBGjcJi0NV.jpg
+C:\wamp64\www\studentroombookings\public\storage\thumbnails\1nyOjqWm1rX7iogyiXb6Yf4mRogxnqiTzQSG4d6S.jpg
+C:\wamp64\www\studentroombookings\public\storage\thumbnails\1uVZPvSXzZz8kfBxvsYuvGOxrV0V4SRonvF13qst.jpg
+C:\wamp64\www\studentroombookings\public\storage\thumbnails\2lEAUnbG7XDoVy8RgFhhsZxPXToNmdydnW4oM3r9.jpg
+C:\wamp64\www\studentroombookings\public\storage\thumbnails\47hOrFKcD3M9oz6chrinLORjAGYKIrWGwqfeUI5r.jpg
+C:\wamp64\www\studentroombookings\public\storage\thumbnails\5Ocu6zY49WfLjg54xx8d9r0JaJUcgS4GmgdasEiZ.jpg
+C:\wamp64\www\studentroombookings\public\storage\thumbnails\6nIlzZWhO0OyNN42XOzijqTuXn5l989oMbc4dA0G.jpg
+[0m
+[0mΓåÆ [0mRead DESIGN.md[90m [limit=250][0m
+[0m
+[0m$ [0m(Get-Content resources\views\pages\home.blade.php | Measure-Object -Line).Lines; (Get-Content 
+public\assets\css\style.css | Measure-Object -Line).Lines
+5
+20511
+[0m
+[0m$ [0mGet-Content resources\views\pages\home.blade.php; "=== WELCOME ==="; Get-Content 
+resources\views\welcome.blade.php -TotalCount 40; "=== app.blade head ==="; Get-Content 
+resources\views\layouts\app.blade.php -TotalCount 60
+@extends('layouts.app')
+
+@section('title', 'Home')
+
+@section('content')
+    @livewire('home-component')
+@endsection
+=== WELCOME ===
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Laravel</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-t
+ext-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-app
+le-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI 
+Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{
+color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.b
+g-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opa
+city:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:
+1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{displa
+y:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}
+.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-
+lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25r
+em}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem
+}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-hei
+ght:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding
+-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0
+}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:cen
+ter}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opa
+city:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rg
+ba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opa
+city))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-
+opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:r
+gba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-colu
+mns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:
+items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:spac
+e-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{pa
+dding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{b
+order-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@
+media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-g
+ray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--
+bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border
+-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;c
+olor:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(20
+3,213,224,var(--text-opacity))}}
+        </style>
+
+        <style>
+            body {
+                font-family: 'Nunito';
+            }
+        </style>
+    </head>
+    <body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center 
+sm:pt-0">
+            @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+                    @else
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                        @endif
+                    @endif
+                </div>
+            @endif
+
+            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
+=== app.blade head ===
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <title>HostelDock - @yield('title', 'Home')</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="HostelDock">
+    <meta name="description" content="HostelDock helps students find, compare and book verified student hostels and 
+rooms in Ghana.">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <script src="{{ asset('assets/js/theme.js') }}"></script>
+
+    <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;450;500;600;700&amp;family=Plus+Jakarta+
+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=Fira+Code:wght@400;500&amp;display=swap"
+>
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/font-awesome/css/all.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/apexcharts/css/apexcharts.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/flatpickr/css/flatpickr.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/choices/css/choices.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/glightbox/css/glightbox.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/tiny-slider/tiny-slider.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/nouislider/nouislider.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/docuforge-design.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/mastercard-design.css') }}">
+
+    @livewireStyles
+    @stack('styles')
+</head>
+
+<body class="@yield('body_class')">
+    @include('partials.header')
+
+    <main>
+        @yield('content')
+    </main>
+
+    @include('partials.footer')
+
+    <div class="back-top"></div>
+
+    <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/clear-modal-overlay.js') }}"></script>
+    <script src="{{ asset('assets/vendor/apexcharts/js/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/flatpickr/js/flatpickr.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/choices/js/choices.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/tiny-slider/tiny-slider.js') }}"></script>
+    <script src="{{ asset('assets/vendor/purecounterjs/dist/purecounter_vanilla.js') }}"></script>
+    <script src="{{ asset('assets/vendor/nouislider/nouislider.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.js') }}"></script>
+[0m
+[0m$ [0mGet-ChildItem app\Http\Livewire, app\Livewire -Recurse -File -ErrorAction SilentlyContinue | Select-Object 
+-ExpandProperty FullName; "=== routes ==="; Get-ChildItem routes -File | Select-Object -ExpandProperty FullName
+C:\wamp64\www\studentroombookings\app\Http\Livewire\HomeComponent.php
+=== routes ===
+C:\wamp64\www\studentroombookings\routes\api.php
+C:\wamp64\www\studentroombookings\routes\channels.php
+C:\wamp64\www\studentroombookings\routes\console.php
+C:\wamp64\www\studentroombookings\routes\web.php
+[0m
+[0m$ [0m(Get-Content resources\views\livewire\home-component.blade.php | Measure-Object -Line).Lines; Get-Content 
+resources\views\livewire\home-component.blade.php -TotalCount 160
+236
+<div>
+    <style>
+        .z-index-1050 {
+            z-index: 1050;
+        }
+    </style>
+
+<section class="hero-promo pt-5 pb-4 mt-2 position-relative overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <span class="eyebrow mb-3 d-inline-flex">Love where you stay</span>
+                    <h1 class="hero-title my-3">HostelDock</h1>
+                    <p class="lead mb-4">
+                        Browse verified hostels near your campus, unlock booking access with a one-time payment,
+                        and reserve the room you love in minutes.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#hotel-view" class="btn btn-primary mb-0">Reserve a Room Today</a>
+                        <a href="{{ route('about') }}" class="btn btn-outline-primary mb-0">Learn more</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="mc-stage">
+                        <div class="mc-watermark" aria-hidden="true">hosteldock</div>
+                        <div class="mc-orbit">
+                            <div class="mc-portrait">
+                                <img src="{{ hd_asset('assets/images/about/slider-imgs.jpg') }}" alt="HostelDock">
+                            </div>
+                            <a href="#hotel-view" class="mc-satellite mc-satellite-s1" aria-label="Search rooms">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <a href="{{ route('about') }}" class="mc-satellite mc-satellite-s2" aria-label="About us">
+                                <i class="bi bi-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="py-4 mt-2">
+        <div class="container">
+            <div class="row g-4" id="hotel-view">
+
+                <div class="mb-2 position-relative">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center 
+justify-content-center"
+                        wire:loading.class="bg-white bg-opacity-75 z-index-1050">
+                        <div class="spinner-grow text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+
+                    <style>
+                        .input-group .form-control {
+                            height: 48px;
+                        }
+                        .input-group-text {
+                            background-color: transparent;
+                        }
+                        .animate-placeholder input::placeholder {
+                            opacity: 0.6;
+                            transition: all 0.3s ease;
+                        }
+                        .animate-placeholder input:focus::placeholder {
+                            opacity: 0.3;
+                            transform: translateY(-2px);
+                        }
+                    </style>
+
+                    <form class="bg-mode border border-secondary-subtle rounded-3 position-relative p-4 pe-md-5 pb-5 
+pb-md-4 mb-4" wire:submit.prevent>
+
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <div class="form-control-border form-control-transparent form-fs-md d-flex">
+                                    <i class="bi bi-search fs-3 me-2 mt-2"></i>
+                                    <div class="flex-grow-1">
+                                        <label class="form-label">Hostel Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter hostel name" 
+wire:model.debounce.550ms="hostel_name" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="position-relative text-center my-4">
+                            <hr>
+                            <span class="position-absolute top-50 start-50 translate-middle px-2 bg-mode 
+small">Advance Filters</span>
+                        </div>
+
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-4">
+                                <div class="form-control-border form-control-transparent form-fs-md d-flex">
+                                    <i class="bi bi-clock-history fs-3 me-2 mt-2"></i>
+                                    <div class="flex-grow-1">
+                                        <label class="form-label">Institution</label>
+                                        <select class="form-select" wire:model="institution">
+                                            @foreach ($institutions as $value => $label)
+                                                <option value="{{ $value }}">{{ $label }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="d-flex">
+                                    <i class="bi bi-building fs-3 me-2 mt-2"></i>
+                                    <div class="form-control-border form-control-transparent form-fs-md">
+                                        <label class="form-label">Room Type</label>
+                                        <select class="form-select" wire:model="room_type">
+                                            @foreach ($roomTypes as $value => $label)
+                                                <option value="{{ $value }}">{{ $label }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="form-control-border form-control-transparent form-fs-md d-flex">
+                                    <i class="bi bi-gender-ambiguous fs-3 me-2 mt-2"></i>
+                                    <div class="form-control-border form-control-transparent form-fs-md w-100">
+                                        <label class="form-label">Gender</label>
+                                        <select class="form-select" wire:model="gender_category">
+                                            @foreach ($genders as $value => $label)
+                                                <option value="{{ $value }}">{{ $label }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-4 align-items-center mt-1">
+                            <div class="col-lg-4">
+                                <div class="form-control-border form-control-transparent form-fs-md d-flex">
+                                    <i class="bi bi-cash-coin fs-3 me-2 mt-2"></i>
+                                    <div class="flex-grow-1">
+                                        <label class="form-label">Minimum Price (GHS)</label>
+                                        <input type="number" min="0" step="1" class="form-control" placeholder="e.g. 
+500" autocomplete="off" wire:model.debounce.550ms="min_price">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="form-control-border form-control-transparent form-fs-md d-flex">
+                                    <i class="bi bi-cash-coin fs-3 me-2 mt-2"></i>
+                                    <div class="flex-grow-1">
+                                        <label class="form-label">Maximum Price (GHS)</label>
+                                        <input type="number" min="0" step="1" class="form-control" placeholder="e.g. 
+2000" autocomplete="off" wire:model.debounce.550ms="max_price">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="form-control-border form-control-transparent form-fs-md d-flex">
+                                    <i class="bi bi-sort-alpha-down fs-3 me-2 mt-2"></i>
+                                    <div class="flex-grow-1">
+                                        <label class="form-label">Sort By</label>
+[0m
+[0m$ [0mGet-Content routes\web.php
+<?php
+
+use App\Http\Controllers\AccountController;
+use App\Http\Controllers\Admin\AdminBookingController;
+use App\Http\Controllers\Admin\AdminHostelPaymentController;
+use App\Http\Controllers\Admin\AdminTokenController;
+use App\Http\Controllers\Admin\AmenityController;
+use App\Http\Controllers\Admin\CampusController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\HostelController as AdminHostelController;
+use App\Http\Controllers\Admin\MessageController;
+use App\Http\Controllers\Admin\RoomCategoryController;
+use App\Http\Controllers\Admin\RoomController as AdminRoomController;
+use App\Http\Controllers\Admin\UserController as AdminUserController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\BookingRenewalController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\HostelController;
+use App\Http\Controllers\HostelImageController;
+use App\Http\Controllers\Manager\ManagerBookingController;
+use App\Http\Controllers\Manager\ManagerDashboardController;
+use App\Http\Controllers\Manager\ManagerHostelController;
+use App\Http\Controllers\Manager\ManagerHostelPaymentController;
+use App\Http\Controllers\Manager\ManagerRoomController;
+use App\Http\Controllers\MomoCallbackController;
+use App\Http\Controllers\MomoPaymentController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\SitemapController;
+use App\Http\Controllers\TokenController;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/about-us', [PageController::class, 'about'])->name('about');
+Route::get('/contact-us', [PageController::class, 'contact'])->name('contact');
+Route::post('/contact-us', [PageController::class, 'contactSubmit'])->name('contact.submit');
+Route::get('/faq', [PageController::class, 'faq'])->name('faq');
+Route::get('/privacy-policy', [PageController::class, 'privacy'])->name('privacy');
+Route::get('/terms-of-service', [PageController::class, 'terms'])->name('terms');
+Route::get('/residency-policy', [PageController::class, 'residency'])->name('residency');
+
+Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
+
+Route::get('/hostels/{hostel:slug}', [HostelController::class, 'show'])->name('hostel.detail');
+
+Route::get('uploads/hostels/{hostel}/{file}', [HostelImageController::class, 'show'])
+    ->where('hostel', '[A-Za-z0-9\-_]+')
+    ->where('file', '[A-Za-z0-9\-_\.]+')
+    ->name('uploads.hostel');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/tokens/buy', [TokenController::class, 'buy'])->name('token.buy');
+    Route::post('/tokens/pay', [TokenController::class, 'pay'])->name('token.pay');
+    Route::get('/tokens/success', [TokenController::class, 'success'])->name('token.success');
+});
+
+Route::get('/tokens/callback', [TokenController::class, 'callback'])->name('token.callback');
+
+Route::middleware(['auth', 'booking.token'])->group(function () {
+    Route::get('/hostels/{hostel:slug}/book', [BookingController::class, 'create'])->name('booking.create');
+    Route::post('/hostels/{hostel:slug}/book', [BookingController::class, 'store'])->name('booking.store');
+});
+Route::get('/booking/{booking:booking_ref}/confirmation', [BookingController::class, 
+'confirmation'])->name('booking.confirmation');
+Route::get('/booking/{booking:booking_ref}/invoice', [BookingController::class, 'invoice'])->name('booking.invoice');
+Route::get('/booking/payment/callback', [BookingController::class, 
+'paymentCallback'])->name('booking.payment.callback');
+
+Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
+Route::post('/register', [AuthController::class, 'register']);
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('/forgot-password', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
+Route::post('/forgot-password', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
+Route::get('/reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.reset');
+Route::post('/reset-password', [ResetPasswordController::class, 'reset'])->name('password.update');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/my-account/profile', [AccountController::class, 'profile'])->name('profile');
+    Route::post('/my-account/profile', [AccountController::class, 'profileUpdate']);
+    Route::get('/my-account/my-bookings', [AccountController::class, 'myBookings'])->name('my-bookings');
+    Route::post('/bookings/{booking}/cancel', [AccountController::class, 'cancelBooking'])->name('booking.cancel');
+    Route::post('/bookings/{booking}/pay', [BookingController::class, 'pay'])->name('booking.pay');
+    Route::post('/bookings/{booking}/pay/momo', [MomoPaymentController::class, 'pay'])->name('booking.pay.momo');
+    Route::post('/bookings/{booking}/pay/momo/status', [MomoPaymentController::class, 
+'status'])->name('booking.pay.momo.status');
+    Route::post('/bookings/{booking}/renewal/lock', [BookingRenewalController::class, 
+'lock'])->name('booking.renewal.lock');
+    Route::post('/bookings/{booking}/renewal/pay', [BookingRenewalController::class, 
+'paystack'])->name('booking.renewal.pay');
+    Route::post('/bookings/{booking}/renewal/pay/momo', [BookingRenewalController::class, 
+'momoPay'])->name('booking.renewal.pay.momo');
+    Route::post('/bookings/{booking}/renewal/pay/momo/status', [BookingRenewalController::class, 
+'momoStatus'])->name('booking.renewal.pay.momo.status');
+});
+
+Route::prefix('admin')->middleware(['auth', 'admin'])->name('admin.')->group(function () {
+    Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+
+    Route::get('/users', [AdminUserController::class, 'index'])->name('users.index');
+    Route::get('/users/create', [AdminUserController::class, 'create'])->name('users.create');
+    Route::post('/users', [AdminUserController::class, 'store'])->name('users.store');
+    Route::get('/users/{user}/edit', [AdminUserController::class, 'edit'])->name('users.edit');
+    Route::put('/users/{user}', [AdminUserController::class, 'update'])->name('users.update');
+    Route::delete('/users/{user}', [AdminUserController::class, 'destroy'])->name('users.destroy');
+
+    Route::get('/hostels', [AdminHostelController::class, 'index'])->name('hostels.index');
+    Route::get('/hostels/create', [AdminHostelController::class, 'create'])->name('hostels.create');
+    Route::post('/hostels', [AdminHostelController::class, 'store'])->name('hostels.store');
+    Route::get('/hostels/{hostel}/edit', [AdminHostelController::class, 'edit'])->name('hostels.edit');
+    Route::put('/hostels/{hostel}', [AdminHostelController::class, 'update'])->name('hostels.update');
+    Route::delete('/hostels/{hostel}', [AdminHostelController::class, 'destroy'])->name('hostels.destroy');
+    Route::post('/hostels/{hostel}/toggle', [AdminHostelController::class, 'toggle'])->name('hostels.toggle');
+
+    Route::get('/hostels/{hostel}/payment-details', [AdminHostelPaymentController::class, 
+'edit'])->name('hostels.payments.edit');
+    Route::put('/hostels/{hostel}/payment-details', [AdminHostelPaymentController::class, 
+'update'])->name('hostels.payments.update');
+
+    Route::get('/hostels/{hostel}/rooms', [AdminRoomController::class, 'index'])->name('hostels.rooms.index');
+    Route::get('/hostels/{hostel}/rooms/create', [AdminRoomController::class, 'create'])->name('hostels.rooms.create');
+    Route::post('/hostels/{hostel}/rooms', [AdminRoomController::class, 'store'])->name('hostels.rooms.store');
+    Route::get('/hostels/{hostel}/rooms/{room}/edit', [AdminRoomController::class, 
+'edit'])->name('hostels.rooms.edit');
+    Route::put('/hostels/{hostel}/rooms/{room}', [AdminRoomController::class, 'update'])->name('hostels.rooms.update');
+    Route::delete('/hostels/{hostel}/rooms/{room}', [AdminRoomController::class, 
+'destroy'])->name('hostels.rooms.destroy');
+    Route::post('/hostels/{hostel}/rooms/{room}/toggle', [AdminRoomController::class, 
+'toggle'])->name('hostels.rooms.toggle');
+
+    Route::get('/bookings', [AdminBookingController::class, 'index'])->name('bookings.index');
+    Route::post('/bookings/{booking}/status', [AdminBookingController::class, 
+'updateStatus'])->name('bookings.status');
+
+    Route::get('/tokens', [AdminTokenController::class, 'index'])->name('tokens.index');
+
+    Route::get('/campuses', [CampusController::class, 'index'])->name('campuses.index');
+    Route::get('/campuses/create', [CampusController::class, 'create'])->name('campuses.create');
+    Route::post('/campuses', [CampusController::class, 'store'])->name('campuses.store');
+    Route::get('/campuses/{campus}/edit', [CampusController::class, 'edit'])->name('campuses.edit');
+    Route::put('/campuses/{campus}', [CampusController::class, 'update'])->name('campuses.update');
+    Route::delete('/campuses/{campus}', [CampusController::class, 'destroy'])->name('campuses.destroy');
+    Route::post('/campuses/{campus}/toggle', [CampusController::class, 'toggle'])->name('campuses.toggle');
+
+    Route::get('/amenities', [AmenityController::class, 'index'])->name('amenities.index');
+    Route::get('/amenities/create', [AmenityController::class, 'create'])->name('amenities.create');
+    Route::post('/amenities', [AmenityController::class, 'store'])->name('amenities.store');
+    Route::get('/amenities/{amenity}/edit', [AmenityController::class, 'edit'])->name('amenities.edit');
+    Route::put('/amenities/{amenity}', [AmenityController::class, 'update'])->name('amenities.update');
+    Route::delete('/amenities/{amenity}', [AmenityController::class, 'destroy'])->name('amenities.destroy');
+    Route::post('/amenities/{amenity}/toggle', [AmenityController::class, 'toggle'])->name('amenities.toggle');
+
+    Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
+    Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
+
+    Route::get('/room-categories', [RoomCategoryController::class, 'index'])->name('room-categories.index');
+    Route::get('/room-categories/create', [RoomCategoryController::class, 'create'])->name('room-categories.create');
+    Route::post('/room-categories', [RoomCategoryController::class, 'store'])->name('room-categories.store');
+    Route::get('/room-categories/{roomCategory}/edit', [RoomCategoryController::class, 
+'edit'])->name('room-categories.edit');
+    Route::put('/room-categories/{roomCategory}', [RoomCategoryController::class, 
+'update'])->name('room-categories.update');
+    Route::delete('/room-categories/{roomCategory}', [RoomCategoryController::class, 
+'destroy'])->name('room-categories.destroy');
+    Route::post('/room-categories/{roomCategory}/toggle', [RoomCategoryController::class, 
+'toggle'])->name('room-categories.toggle');
+});
+
+Route::prefix('manager')->middleware(['auth', 'manager'])->name('manager.')->group(function () {
+    Route::get('/', [ManagerDashboardController::class, 'index'])->name('dashboard');
+
+    Route::get('/hostels', [ManagerHostelController::class, 'index'])->name('hostels.index');
+    Route::get('/hostels/{hostel}/edit', [ManagerHostelController::class, 'edit'])->name('hostels.edit');
+    Route::put('/hostels/{hostel}', [ManagerHostelController::class, 'update'])->name('hostels.update');
+
+    Route::get('/hostels/{hostel}/payment-details', [ManagerHostelPaymentController::class, 
+'edit'])->name('hostels.payments.edit');
+    Route::put('/hostels/{hostel}/payment-details', [ManagerHostelPaymentController::class, 
+'update'])->name('hostels.payments.update');
+
+    Route::get('/hostels/{hostel}/rooms', [ManagerRoomController::class, 'index'])->name('hostels.rooms.index');
+    Route::get('/hostels/{hostel}/rooms/create', [ManagerRoomController::class, 
+'create'])->name('hostels.rooms.create');
+    Route::post('/hostels/{hostel}/rooms', [ManagerRoomController::class, 'store'])->name('hostels.rooms.store');
+    Route::get('/hostels/{hostel}/rooms/{room}/edit', [ManagerRoomController::class, 
+'edit'])->name('hostels.rooms.edit');
+    Route::put('/hostels/{hostel}/rooms/{room}', [ManagerRoomController::class, 
+'update'])->name('hostels.rooms.update');
+    Route::delete('/hostels/{hostel}/rooms/{room}', [ManagerRoomController::class, 
+'destroy'])->name('hostels.rooms.destroy');
+    Route::post('/hostels/{hostel}/rooms/{room}/toggle', [ManagerRoomController::class, 
+'toggle'])->name('hostels.rooms.toggle');
+
+    Route::get('/bookings', [ManagerBookingController::class, 'index'])->name('bookings.index');
+    Route::post('/bookings/{booking}/status', [ManagerBookingController::class, 
+'updateStatus'])->name('bookings.status');
+});
+[0m
+[0m$ [0mGet-Content resources\views\livewire\home-component.blade.php | Select-Object -Skip 160; "=== HEADER ==="; 
+Get-Content resources\views\partials\header.blade.php -TotalCount 80
+<select class="form-select" wire:model="sort_by">
+                                            @foreach ($sortOptions as $value => $label)
+                                                <option value="{{ $value }}">{{ $label }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-position-md-middle">
+                            <button type="button" class="icon-lg btn btn-round btn-primary mb-0" wire:loading.remove 
+wire:click="resetFilters">
+                                <i class="fa fa-refresh fa-fw"></i>
+                            </button>
+                            <button type="button" class="icon-lg btn btn-round btn-primary mb-0" wire:loading 
+wire:target="resetFilters">
+                                <i class="fa fa-spinner fa-spin fa-fw"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                @forelse ($hostels as $hostel)
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card p-2 pb-0 h-100">
+<div class="tiny-slider arrow-round arrow-xs arrow-dark rounded-2 overflow-hidden">
+                                <div class="tiny-slider-inner" data-autoplay="true" data-arrow="true" 
+data-dots="false" data-items="1"
+                                    id="hostel-slider-{{ $hostel->id }}" style="height: 250px;">
+                                    @foreach ($hostel->galleryImages() as $image)
+                                        <div>
+                                            <a href="{{ route('hostel.detail', $hostel->slug) }}">
+                                                <img src="{{ asset($image) }}" alt="{{ $hostel->displayName() }}" 
+loading="lazy">
+                                            </a>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+
+                            <div class="card-body px-3 pb-0">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <span class="badge bg-dark text-white"><i class="bi fa-fw bi-star-fill me-2 
+text-warning"></i>{{ number_format($hostel->rating, 1) }}</span>
+                                    <span class="badge bg-dark text-white"><i class="bi fa-fw bi-door-open 
+me-2"></i>{{ $hostel->availableRooms() }} Rooms Available</span>
+                                </div>
+
+                                <h5 class="card-title mb-1">
+                                    <a href="{{ route('hostel.detail', $hostel->slug) }}">
+                                        {{ $hostel->displayName() }}
+                                    </a>
+                                </h5>
+                                @if ($hostel->institutionLabel())
+                                    <p class="small text-muted mb-2"><i class="bi fa-fw bi-mortarboard me-1"></i>{{ 
+$hostel->institutionLabel() }}</p>
+                                @endif
+
+                                <ul class="nav nav-divider mb-2 mb-sm-3">
+                                    <li class="nav-item"><i class="fa fa-location-dot text-primary"></i>{{ 
+$hostel->location }}</li>
+                                </ul>
+                                <ul class="nav nav-divider mb-2 mb-sm-3">
+                                    <li class="nav-item"><i class="fa fa-walking text-primary"></i>&nbsp;{{ 
+$hostel->distance }}</li>
+                                </ul>
+                                <ul class="nav nav-divider mb-2 mb-sm-3">
+                                    <li class="nav-item"><i class="fa fa-male text-primary"></i>&nbsp; {{ 
+$hostel->maleRooms() }}</li>
+                                    <li class="nav-item"><i class="fa fa-female text-primary"></i>&nbsp; {{ 
+$hostel->femaleRooms() }}</li>
+                                    <li class="nav-item"><i class="fa fa-genderless text-primary"></i>&nbsp; {{ 
+$hostel->unisexRooms() }}</li>
+                                </ul>
+                                <ul class="nav nav-divider mb-2 mb-sm-3">
+                                    <li class="nav-item"><i class="fa fa-cash-register text-primary"></i>&nbsp;GHS{{ 
+number_format($hostel->starting_price, 2) }} starting price</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-footer pt-0">
+                                <div class="d-sm-flex justify-content-sm-between align-items-center">
+                                    <div class="mt-2 mt-sm-0 w-100">
+                                        <a href="{{ route('hostel.detail', $hostel->slug) }}" class="btn btn-sm 
+btn-primary mb-0 w-100">View Detail<i class="bi bi-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @empty
+                    <div class="col-12">
+                        <div class="card p-5 text-center">
+                            <h5>No hostels found</h5>
+                            <p class="mb-3">Try adjusting your search or filters to find a hostel.</p>
+                            <div>
+                                <button type="button" class="btn btn-primary-soft" wire:click="resetFilters">Clear 
+Filters</button>
+                            </div>
+                        </div>
+                    </div>
+                @endforelse
+
+                <div class="col-12">
+                    {{ $hostels->links() }}
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+=== HEADER ===
+<!-- Header START - floating pill navigation -->
+<header class="mc-nav-wrap">
+    <nav class="navbar mc-nav navbar-expand-xl">
+        <div class="container-fluid px-0 flex-wrap flex-xl-nowrap align-items-center gap-2">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="{{ url('/') }}">
+                <img class="navbar-brand-item" src="{{ hd_asset('assets/images/logo.png') }}" alt="HostelDock">
+            </a>
+
+            <button class="navbar-toggler ms-auto mx-3 p-0 p-sm-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-animation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav navbar-nav-scroll mx-auto">
+                    <li class="nav-item mx-lg-1">
+                        <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="{{ url('/') }}">Home</a>
+                    </li>
+                    <li class="nav-item mx-lg-1">
+                        <a class="nav-link {{ request()->is('about-us') ? 'active' : '' }}" href="{{ route('about') 
+}}">About Us</a>
+                    </li>
+                    <li class="nav-item mx-lg-1">
+                        <a class="nav-link {{ request()->is('contact-us') ? 'active' : '' }}" href="{{ 
+route('contact') }}">Contact Us</a>
+                    </li>
+                    <li class="nav-item mx-lg-1">
+                        <a class="nav-link {{ request()->is('faq') ? 'active' : '' }}" href="{{ route('faq') }}">Help 
+&amp; FAQ</a>
+                    </li>
+                </ul>
+
+                <ul class="nav flex-row flex-wrap align-items-center list-unstyled ms-xl-auto mt-2 mt-xl-0 gap-2">
+                    <li class="nav-item">
+                        <button type="button" class="mc-theme-toggle js-theme-toggle" aria-label="Toggle light / dark 
+mode" title="Toggle light / dark mode">
+                            <i class="bi bi-moon-stars theme-icon-light"></i>
+                            <i class="bi bi-sun theme-icon-dark d-none"></i>
+                        </button>
+                    </li>
+                    @auth
+                        <li class="nav-item dropdown" style="list-style-type: none;">
+                            <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button"
+                                data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img class="avatar-img" src="{{ asset('assets/images/avatar/13.png') }}" alt="avatar">
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3" 
+aria-labelledby="profileDropdown">
+                                <li class="px-3 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar me-3">
+                                            <img class="avatar-img rounded-circle" src="{{ 
+asset('assets/images/avatar/13.png') }}" alt="avatar">
+                                        </div>
+                                        <div>
+                                            <a class="h6 mt-2 mt-sm-0" href="{{ route('profile') }}">Hello, {{ 
+auth()->user()->name }}</a>
+                                            <p class="small m-0">{{ auth()->user()->email }}</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="{{ route('profile') }}"><i class="bi bi-person 
+fa-fw me-2"></i>My Profile</a></li>
+                                <li><a class="dropdown-item" href="{{ route('my-bookings') }}"><i class="bi 
+bi-bookmark-check fa-fw me-2"></i>My Bookings</a></li>
+                                <li><a class="dropdown-item" href="{{ route('faq') }}"><i class="bi bi-info-circle 
+fa-fw me-2"></i>Help Center</a></li>
+                                @if (auth()->user()->isAdmin())
+                                    <li><a class="dropdown-item" href="{{ route('admin.dashboard') }}"><i class="bi 
+bi-speedometer2 fa-fw me-2"></i>Admin Panel</a></li>
+                                @elseif (auth()->user()->isManager())
+                                    <li><a class="dropdown-item" href="{{ route('manager.dashboard') }}"><i class="bi 
+bi-buildings fa-fw me-2"></i>Manager Panel</a></li>
+                                @endif
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <form method="POST" action="{{ route('logout') }}" class="dropdown-item p-0">
+                                        @csrf
+                                        <button type="submit" class="dropdown-item btn-link bg-transparent border-0 
+w-100 text-start">
+                                            <i class="bi bi-box-arrow-right fa-fw me-2"></i>Sign Out
+                                        </button>
+                                    </form>
+                                </li>
+                            </ul>
+[0m
+[0m$ [0mGet-Content public\assets\css\mastercard-design.css -TotalCount 90; "=== docuforge ==="; Get-Content 
+public\assets\css\docuforge-design.css -TotalCount 60
+/*!
+ * Mastercard-inspired design system
+ * Warm cream canvas, extreme radii, orbit + trajectory, ink-black CTAs
+ * Applied as an override layer on top of the Bootstrap theme (public layout only)
+ * Reference: /DESIGN.md
+ */
+
+/* ============================================================
+   Design tokens
+   ============================================================ */
+:root {
+  /* Mastercard palette */
+  --mc-canvas: #F3F0EE;
+  --mc-lifted: #FCFBFA;
+  --mc-white: #FFFFFF;
+  --mc-bone: #F4F4F4;
+
+  --mc-ink: #141413;
+  --mc-charcoal: #262627;
+  --mc-slate: #696969;
+  --mc-granite: #555555;
+  --mc-graphite: #565656;
+  --mc-taupe: #D1CDC7;
+
+  --mc-border: var(--mc-border);
+  --mc-border-strong: var(--mc-border-strong);
+
+  --mc-orange: #CF4500;
+  --mc-orange-light: #F37338;
+  --mc-clay: #9A3A0A;
+  --mc-link: #3860BE;
+
+  --mc-font: "Sofia Sans", Arial, sans-serif;
+
+  --mc-radius-lg: 40px;
+  --mc-radius-pill: 9999px;
+  --mc-radius-20: 20px;
+  --mc-radius-16: 16px;
+  --mc-radius-12: 12px;
+
+  --mc-shadow-deep: rgba(0, 0, 0, 0.08) 0px 24px 48px;
+  --mc-shadow-soft: rgba(0, 0, 0, 0.06) 0px 12px 28px;
+
+  /* Remap Bootstrap theme (light, cream) */
+  --bs-primary: var(--mc-ink);
+  --bs-primary-rgb: 20, 20, 19;
+  --bs-secondary: var(--mc-orange);
+  --bs-secondary-rgb: 207, 69, 0;
+  --bs-body-color: var(--mc-charcoal);
+  --bs-body-color-rgb: 38, 38, 39;
+  --bs-body-bg: var(--mc-canvas);
+  --bs-border-color: var(--mc-border);
+  --bs-border-radius: 16px;
+  --bs-border-radius-sm: 12px;
+  --bs-border-radius-lg: 24px;
+  --bs-border-radius-xl: 40px;
+  --bs-success: #2E7D32;
+  --bs-success-rgb: 46, 125, 50;
+  --bs-danger: #B3261E;
+  --bs-danger-rgb: 179, 38, 30;
+  --bs-warning: var(--mc-orange-light);
+  --bs-warning-rgb: 243, 115, 56;
+  --bs-info: var(--mc-link);
+  --bs-info-rgb: 56, 96, 190;
+  --bs-dark: var(--mc-ink);
+  --bs-dark-rgb: 20, 20, 19;
+  --bs-light: var(--mc-lifted);
+  --bs-light-rgb: 252, 251, 250;
+  --bs-link-color: var(--mc-link);
+  --bs-link-hover-color: #2C4E9B;
+  --bs-focus-ring-color: rgba(243, 115, 56, 0.35);
+  --bs-btn-border-radius: var(--mc-radius-20);
+  --bs-btn-border-radius-sm: 16px;
+  --bs-btn-border-radius-lg: var(--mc-radius-pill);
+  --mc-primary-soft: #EFEBE8;
+}
+
+html {
+  scroll-padding-top: 96px;
+}
+
+body {
+  font-family: var(--mc-font);
+  background-color: var(--mc-canvas);
+  color: var(--mc-charcoal);
+  font-weight: 450;
+  font-size: 16.5px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+=== docuforge ===
+/*!
+ * DocuForge design system
+ * Blue-purple-gray palette, readable docs-style layout
+ * Applied as an override layer on top of the Bootstrap theme
+ */
+
+/* ============================================================
+   Design tokens
+   ============================================================ */
+:root {
+  --df-primary: #2563eb;
+  --df-primary-hover: #1d4ed8;
+  --df-secondary: #7c3aed;
+  --df-tertiary: #6b7280;
+  --df-bg: #fafafa;
+  --df-surface: #ffffff;
+  --df-body: #374151;
+  --df-heading: #18181b;
+  --df-border: #e4e4e7;
+  --df-border-subtle: #f4f4f5;
+  --df-success: #16a34a;
+  --df-warning: #ca8a04;
+  --df-error: #dc2626;
+  --df-info: #2563eb;
+
+  --df-font-headline: "Plus Jakarta Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, 
+sans-serif;
+  --df-font-body: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --df-font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --df-radius-none: 0px;
+  --df-radius-sm: 4px;
+  --df-radius-md: 8px;
+  --df-radius-lg: 12px;
+  --df-radius-xl: 16px;
+  --df-radius-full: 9999px;
+
+  --df-space-1: 4px;
+  --df-space-2: 8px;
+  --df-space-3: 16px;
+  --df-space-4: 24px;
+  --df-space-5: 32px;
+  --df-space-6: 48px;
+  --df-space-7: 64px;
+  --df-space-8: 96px;
+
+  --df-shadow-subtle: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --df-shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --df-shadow-large: 0 12px 32px rgba(0, 0, 0, 0.1);
+
+  /* Remap Bootstrap theme */
+  --bs-primary: #2563eb;
+  --bs-primary-rgb: 37, 99, 235;
+  --bs-secondary: #7c3aed;
+  --bs-secondary-rgb: 124, 58, 237;
+  --bs-body-color: #374151;
+  --bs-body-color-rgb: 55, 65, 81;
+  --bs-body-bg: #ffffff;
+  --bs-border-color: #e4e4e7;
+  --bs-success: #16a34a;
+  --bs-success-rgb: 22, 163, 74;
+[0m
+[0m$ [0mSelect-String -Path 
+resources\views\pages\token-buy.blade.php,resources\views\pages\about.blade.php,resources\views\pages\faq.blade.php 
+-Pattern '<h[1-4][^>]*>.*|lead|eyebrow' | Select-Object -First 50 | ForEach-Object { $_.Filename + ': ' + ($_.Line 
+-replace '\s+',' ').Trim() }
+token-buy.blade.php: <h1 class="text-white mb-0">Buy Booking Access Token</h1>
+token-buy.blade.php: <h4 class="mb-2">You have an active booking token</h4>
+token-buy.blade.php: <h4 class="mb-2">Unlock Booking Access</h4>
+about.blade.php: <h1 class="text-white mb-0">About Us</h1>
+about.blade.php: <h2 class="mb-3">About HostelDock</h2>
+about.blade.php: <p class="mb-0">To become Ghana's leading digital accommodation marketplace for students across every 
+university and campus.</p>
+faq.blade.php: <h1 class="text-white mb-0">Help Center / FAQ's</h1>
+faq.blade.php: <h2 class="accordion-header" id="heading{{ $index }}">
+[0m
+[0m$ [0mSelect-String -Path resources\views\pages\*.blade.php -Pattern 'verified|Ghana|campus|token|unlock' 
+-CaseSensitive:$false | Select-Object -First 40 | ForEach-Object { $_.Filename + ': ' + ($_.Line -replace '\s+',' 
+').Trim().Substring(0,[Math]::Min(160,($_.Line -replace '\s+',' ').Trim().Length)) }
+about.blade.php: HostelDock is Ghana's trusted platform for booking student hostels and rooms near your
+about.blade.php: campus. We connect students to verified and affordable accommodation options, making the search
+about.blade.php: KNUST, KSTU, University of Ghana and more, so you can compare prices, check availability and
+about.blade.php: <div><h6 class="mb-0">Verified Hostels</h6></div>
+about.blade.php: <p class="mb-0">To become Ghana's leading digital accommodation marketplace for students across every 
+university and campus.</p>
+about.blade.php: <p class="mb-1">Tamso Estate Junction, Tarkwa, Western Region, Ghana</p>
+about.blade.php: <p class="mb-1">Near Takoradi Technical University, Takoradi, Western Region, Ghana</p>
+booking.blade.php: <li>Verified hostels only</li>
+contact.blade.php: <p class="small text-muted mb-0">Tamso Estate Junction, Tarkwa, Western Region, Ghana</p>
+contact.blade.php: <p class="small text-muted mb-0">Near Takoradi Technical University, Takoradi, Western Region, 
+Ghana</p>
+faq.blade.php: ['Which institutions are covered?', 'We currently list hostels around UMaT (Tarkwa &amp; Takoradi), TTU 
+(Takoradi), Ghana Telecom University (Takoradi) with mor
+faq.blade.php: ['Are the hostels verified?', 'Yes. Every hostel on the platform has been inspected and verified by our 
+team to ensure it meets our standards of security, comfo
+hostel-detail.blade.php: $campus = $hostel->campusCoordinates();
+hostel-detail.blade.php: : ($hostel->location ?: 'Kumasi, Ghana');
+hostel-detail.blade.php: $campusQuery = ($campus && $campus['lat'] !== null)
+hostel-detail.blade.php: ? $campus['lat'] . ',' . $campus['lng']
+hostel-detail.blade.php: : ($campus['name'] ?? 'campus');
+hostel-detail.blade.php: data-campus-lat="{{ $campus['lat'] ?? '' }}"
+hostel-detail.blade.php: data-campus-lng="{{ $campus['lng'] ?? '' }}"
+hostel-detail.blade.php: data-campus-name="{{ $campus['name'] ?? '' }}">
+hostel-detail.blade.php: <a href="{{ 'https://www.google.com/maps/dir/?api=1&origin=' . urlencode($campusQuery) . 
+'&destination=' . urlencode($hostelQuery) . '&travelmode=walking' }}" t
+hostel-detail.blade.php: <a href="{{ 'https://www.google.com/maps/dir/?api=1&origin=' . urlencode($campusQuery) . 
+'&destination=' . urlencode($hostelQuery) . '&travelmode=driving' }}" t
+hostel-detail.blade.php: <small class="text-muted">Verified Hostel Partner</small>
+hostel-detail.blade.php: const hasCampus = mapEl.dataset.campusLat !== '' && mapEl.dataset.campusLng !== '';
+hostel-detail.blade.php: const campusPos = hasCampus ? { lat: parseFloat(mapEl.dataset.campusLat), lng: 
+parseFloat(mapEl.dataset.campusLng) } : null;
+hostel-detail.blade.php: const campusIcon = {
+hostel-detail.blade.php: if (campusPos) bounds.extend(campusPos);
+hostel-detail.blade.php: const origin = userPos || campusPos || hostelPos;
+hostel-detail.blade.php: if (!userPos && !campusPos) {
+hostel-detail.blade.php: const from = userPos ? 'your location' : (mapEl.dataset.campusName || 'campus');
+hostel-detail.blade.php: if (campusPos) {
+hostel-detail.blade.php: position: campusPos, map: map, title: mapEl.dataset.campusName || 'Campus', icon: campusIcon,
+terms.blade.php: <p>HostelDock is a digital marketplace that connects students with verified hostels. We facilitate 
+bookings but are not the landlord of the hostels listed.</p>
+terms.blade.php: <p>All prices are listed in Ghana Cedi (GHS) and are per academic year unless stated otherwise. 
+Prices are set by the hostel and may be changed by the hostel wi
+token-buy.blade.php: @section('title', 'Buy Booking Access Token')
+token-buy.blade.php: <li class="breadcrumb-item active text-white" aria-current="page">Buy Token</li>
+token-buy.blade.php: <h1 class="text-white mb-0">Buy Booking Access Token</h1>
+token-buy.blade.php: <h4 class="mb-2">You have an active booking token</h4>
+token-buy.blade.php: <p class="text-muted mb-3">Token: <strong>{{ $active->token_ref }}</strong></p>
+token-buy.blade.php: <h4 class="mb-2">Unlock Booking Access</h4>
+[0m
