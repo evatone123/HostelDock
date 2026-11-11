@@ -1,9 +1,0 @@
-{
-  "name": "brag-work",
-  "private": true,
-  "version": "1.0.0",
-  "dependencies": {
-    "ffmpeg-static": "^5.3.0",
-    "playwright": "^1.63.0"
-  }
-}
